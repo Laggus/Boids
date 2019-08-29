@@ -1,0 +1,25 @@
+﻿<Window x:Class="Boids_WPF.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Boids_WPF"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+    <Grid>
+        <Canvas x:Name="MainCanvas" Height="420" VerticalAlignment="Top" Width="550" Margin="0,0,372,0"/>
+        <Button x:Name="StartButton" Content="Start" HorizontalAlignment="Left" Margin="707,388,0,0" VerticalAlignment="Top" Width="75" Click="StartButton_Click"/>
+        <Slider x:Name="AlignSlider" VerticalAlignment="Top" HorizontalAlignment="Right" Width="181"  Maximum="5" Margin="0,31,10,0" Value="1"/>
+        <Slider x:Name="CohesionSlider" VerticalAlignment="Top" HorizontalAlignment="Right" Width="181"  Maximum="10" Margin="0,79,10,0" Value="1"/>
+        <Slider x:Name="SeparationSlider" VerticalAlignment="Top" HorizontalAlignment="Right" Width="181"  Maximum="10" Margin="0,127,10,0" Value="1"/>
+        <TextBlock HorizontalAlignment="Left" Margin="601,10,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="181" Text="Alignment Strength"/>
+        <TextBlock HorizontalAlignment="Left" Margin="601,58,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="181" Text="Cohesion Strength"/>
+        <TextBlock HorizontalAlignment="Left" Margin="601,106,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="181" Text="Separation Strength"/>
+        <TextBlock HorizontalAlignment="Left" Margin="725,154,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Text="Separation Range"/>
+        <TextBlock HorizontalAlignment="Left" Margin="663,154,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Text="Cohesion Range" Width="57"/>
+        <TextBlock HorizontalAlignment="Left" Margin="601,154,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Text="Alignment Range" Width="57"/>
+        <TextBox x:Name="SeparationRange" HorizontalAlignment="Left" Height="23" Margin="725,191,0,0" TextWrapping="Wrap" Text="20" VerticalAlignment="Top" Width="57"/>
+        <TextBox x:Name="CohesionRange" HorizontalAlignment="Left" Height="23" Margin="663,191,0,0" TextWrapping="Wrap" Text="20" VerticalAlignment="Top" Width="57"/>
+        <TextBox x:Name="AlignmentRange" HorizontalAlignment="Left" Height="23" Margin="601,191,0,0" TextWrapping="Wrap" Text="20" VerticalAlignment="Top" Width="57"/>
+    </Grid>
+</Window>
